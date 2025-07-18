@@ -22,9 +22,9 @@ Add to your `pubspec.yaml`:
 dependencies:
   app_events:
 
+```
 
-
-  ## 🧩 Usage
+## 🧩 Usage
 
 ### 1️⃣ Wrap your app with `EventBusListener`
 
@@ -100,6 +100,7 @@ class AppWidget extends StatelessWidget {
     );
   }
 }
+```
 
 
 
