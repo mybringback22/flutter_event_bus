@@ -1,4 +1,4 @@
-name: app_events
+name: flutter_app_events
 description: "A Flutter package to listen for app lifecycle events and network connectivity changes, and propagate them using your preferred state management solution."
 version: 0.0.1-beta.1
 homepage: https://github.com/mybringback22/flutter_event_bus
