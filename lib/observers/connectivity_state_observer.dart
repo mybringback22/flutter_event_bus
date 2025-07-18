@@ -3,11 +3,11 @@ import 'package:app_events/enums/network_state_enum.dart';
 import 'package:app_events/event_bus_listener.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
-class NetworkStateObserver {
-  final NetworkEventCallback? onNetworkEvent;
+class ConnectivityStateObserver {
+  final ConnectivityEventCallback? onNetworkEvent;
   StreamSubscription<List<ConnectivityResult>>? _subscription;
 
-  NetworkStateObserver({this.onNetworkEvent}) {
+  ConnectivityStateObserver({this.onNetworkEvent}) {
     _startListening();
   }
 

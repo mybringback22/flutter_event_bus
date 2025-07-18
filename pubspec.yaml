@@ -1,7 +1,8 @@
 name: app_events
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/mybringback22/flutter_event_bus
+repository: https://github.com/mybringback22/flutter_event_bus
 
 environment:
   sdk: ^3.7.2

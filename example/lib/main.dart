@@ -53,7 +53,7 @@ class AppWidget extends StatelessWidget {
             break;
         }
       },
-      onNetworkEvent: (state) {
+      onConnectivityEvent: (state) {
         log("--------> Network State: $state");
         switch (state) {
           case NetworkState.disconnected:
