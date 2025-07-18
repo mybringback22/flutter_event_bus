@@ -1,0 +1,1 @@
+enum AppState { foreground, background, resumed, paused }
