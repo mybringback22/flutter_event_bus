@@ -1,5 +1,8 @@
-import 'package:app_events/app_events.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_app_events/enums/app_state_enum.dart';
+import 'package:flutter_app_events/enums/network_state_enum.dart';
+import 'package:flutter_app_events/observers/app_state_observer.dart';
+import 'package:flutter_app_events/observers/connectivity_state_observer.dart';
 
 typedef AppEventCallback = void Function(AppState state);
 typedef ConnectivityEventCallback = void Function(NetworkState state);

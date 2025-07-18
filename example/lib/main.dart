@@ -1,10 +1,13 @@
 import 'dart:developer';
 
-import 'package:app_events/app_events.dart';
+
 import 'package:example/app_state_bloc/app_state_bloc.dart';
 import 'package:example/internet_connection_bloc/internet_connection_bloc.dart';
 import 'package:example/screens/dashboard.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_events/enums/app_state_enum.dart';
+import 'package:flutter_app_events/enums/network_state_enum.dart';
+import 'package:flutter_app_events/event_bus_listener.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {

@@ -1,7 +1,8 @@
 
-import 'package:app_events/enums/app_state_enum.dart';
-import 'package:app_events/event_bus_listener.dart';
+
 import 'package:flutter/widgets.dart';
+import 'package:flutter_app_events/enums/app_state_enum.dart';
+import 'package:flutter_app_events/event_bus_listener.dart';
 
 // typedef AppEventCallback = void Function(AppState state);
 
