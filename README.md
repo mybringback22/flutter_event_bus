@@ -117,12 +117,3 @@ class AppWidget extends StatelessWidget {
 
 **Umar Manzoor** –  [@mybringback22](https://github.com/mybringback22)
 
----
-
-### 🔑 Copy & adjust
-
-- Replace **Your Name**, **your.website**, and **@yourhandle** with your actual info.
-- Add a real `Dashboard` widget or explain it if needed.
-- You can include more sections like **Installation**, **Features**, or **Changelog** if you want!
-
-If you’d like, I can generate those too — just say **“yes”** 🚀
