@@ -11,9 +11,8 @@ class ScreenOne extends StatelessWidget {
     return BlocBuilder<InternetConnectionBloc, InternetConnectionState>(
       builder: (context, state) {
         if (state is InternetDisconnectedState) {
-          return NoInternetWidget();  
+          return NoInternetWidget();
         }
-
 
         return Text("Screen One");
       },

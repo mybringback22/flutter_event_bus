@@ -6,7 +6,6 @@ part 'app_state_state.dart';
 
 class AppStateBloc extends Bloc<AppStateEvent, AppStateState> {
   AppStateBloc() : super(AppStarted()) {
-    
     on<AppStartedEvent>((event, emit) => emit(AppStarted()));
     on<AppResumedEvent>((event, emit) => emit(AppResumed()));
     on<AppPausedEvent>((event, emit) => emit(AppPaused()));

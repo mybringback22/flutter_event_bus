@@ -5,6 +5,10 @@ class NoInternetWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(width: double.infinity, height: double.infinity, child: Center(child: Text("No Internet")));
+    return SizedBox(
+      width: double.infinity,
+      height: double.infinity,
+      child: Center(child: Text("No Internet")),
+    );
   }
 }

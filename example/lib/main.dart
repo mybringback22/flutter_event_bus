@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-
 import 'package:example/app_state_bloc/app_state_bloc.dart';
 import 'package:example/internet_connection_bloc/internet_connection_bloc.dart';
 import 'package:example/screens/dashboard.dart';
@@ -21,7 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
       home: MultiBlocProvider(
         providers: [
           BlocProvider(create: (context) => AppStateBloc()),
@@ -60,10 +61,14 @@ class AppWidget extends StatelessWidget {
         log("--------> Network State: $state");
         switch (state) {
           case NetworkState.disconnected:
-            context.read<InternetConnectionBloc>().add(InternetDisconnectedEvent());
+            context.read<InternetConnectionBloc>().add(
+              InternetDisconnectedEvent(),
+            );
             break;
           case NetworkState.connected:
-            context.read<InternetConnectionBloc>().add(InternetConnectedEvent());
+            context.read<InternetConnectionBloc>().add(
+              InternetConnectedEvent(),
+            );
             break;
         }
       },

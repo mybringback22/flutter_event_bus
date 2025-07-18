@@ -1,6 +1,6 @@
-# app_events
+# flutter_app_events
 
-**app_events** is a simple Flutter package to detect **app lifecycle events** (like foreground, background, paused) and **network connectivity changes**, then propagate these events through your app with your own state management (e.g. BLoC, Provider).
+**flutter_app_events** is a simple Flutter package to detect **app lifecycle events** (like foreground, background, paused) and **network connectivity changes**, then propagate these events through your app with your own state management (e.g. BLoC, Provider).
 
 ---
 
@@ -20,7 +20,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  app_events:
+  flutter_app_events:
 
 ```
 
@@ -35,7 +35,7 @@ dependencies:
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app_events/app_events.dart';
+import 'package:flutter_app_events/app_events.dart';
 
 void main() {
   runApp(const MyApp());

@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 part 'internet_connection_event.dart';
 part 'internet_connection_state.dart';
 
-class InternetConnectionBloc extends Bloc<InternetConnectionEvent, InternetConnectionState> {
+class InternetConnectionBloc
+    extends Bloc<InternetConnectionEvent, InternetConnectionState> {
   InternetConnectionBloc() : super(InternetConnectedState()) {
-    
     on<InternetDisconnectedEvent>((event, emit) {
       emit(InternetDisconnectedState());
     });
@@ -14,6 +14,5 @@ class InternetConnectionBloc extends Bloc<InternetConnectionEvent, InternetConne
     on<InternetConnectedEvent>((event, emit) {
       emit(InternetConnectedState());
     });
-    
   }
 }
